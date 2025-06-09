@@ -1,0 +1,150 @@
+/*=========settings style for the whole body==========*/
+body{
+padding    : 0;
+margin     : 0;
+font-family: Helvetica;
+}
+
+/*=========settings style for the Header==========*/
+#header{
+position: fixed; /*set header to fixed so that when scrolling the header will be visible*/
+top     : 0;
+left    : 0;
+z-index : 500; /*set header to z-index so that when scrolling everyting will go under the header*/
+width   :100%;
+height  :80px;
+background-image  : url('images/wood-bg.png'); /*set background image for the header*/
+background-repeat: repeat-x; /*set background image to repeate-x so that it will cover the whole header area*/
+}
+#header img{ /*setting style for the header image*/
+display: block; /*allows to set width and height for hyperlinks*/
+margin : auto;
+height : 70%;
+padding-top: 15px; /*set spacing in the header*/
+}
+
+/*=========settings style for Top Tabs==========*/
+
+#tabs-top{
+position: fixed;
+top     : 80px;
+left    : 0;
+z-index : 500;
+width   : 100%;
+height  : 40px;
+background-color: darkgreen;
+}
+
+
+#tabs-top a{ /*setting style for the tabs-top hyperlinks*/
+float   : left;
+display : block; /*allows to set width and height for hyperlinks*/
+width   : 33%;  /*to determine the width use the number of hyperlinks/buttons you'll have e.g here we have 3 so 1/3>>33%)*/
+height  :35px;
+font-weight : 700;
+color       : white;
+text-align  : center; /*set alignment for the top tabs*/
+text-decoration : none; /*set Hyperlinks to look like button(remove the line underneath)*/
+padding-top     : 12px;  /* set Hyperlink buttons to be vertically aligned*/
+}
+
+
+/*=========settings style for Top Bottom==========*/
+
+#tabs-bottom{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 500;
+    width: 100%;
+    height: 40px;
+    background-color: forestgreen;
+
+}
+
+#tabs-bottom a{
+    float: left;
+    display: block;
+    width: 50%; /*to determine the width use the number of hyperlinks/buttons you'll have e.g here we have 2 so 1/2>>50%)*/
+    height: 35px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding-top: none;
+}
+
+/*=========settings main home page==========*/
+#main-home{
+margin-top: 120px; /* height of Header plus heaight of tabs-top*/
+}
+
+/*=========settings main animal page==========*/
+
+#main-animal{ /*we use a # when refering to an id hyperlink*/
+    margin-top: 119px;
+    background: url('images/map-blur.png');
+    background-repeat: repeat-y;
+}
+#content{
+    padding-top: 1px;
+    padding-bottom: 50px;
+}
+
+/*=========settings info box==========*/
+a.info-box{ /*we use a. if refering to a class hyperlink*/
+    text-decoration: none;
+    background: rgba(255, 255, 255, .8);
+    width: 90%;
+    height: 90px;
+    display: block;
+    margin: auto; /*we want boxes or animal options to be centralized in the page*/
+    margin-top: 12px; /*spaces between the boxes/animal options*/
+    padding: 1px;
+
+}
+
+/*=========settings info box image==========*/
+.info-box img{
+height : 70px; 
+margin : 10px;
+float  : left; /*set animal image to be always on the left of the box*/
+}
+.info-box h3{
+padding : 0;
+margin-bottom :0; /*set animal title to have brown color*/
+width : 90%;
+color : #572800;
+}
+.info-box p{
+margin  : 0; /* style paragraph*/
+padding : 0;
+width   : 90%;
+color   : #131313;
+}
+.info-box img.right{
+ float      : right;
+ margin-top : 25px;  /* style right arrow image inside the info box*/
+ height: 40px;
+}
+
+#info-box-full{
+    margin: auto;
+    background: rgba(255, 255, 255, .8);
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-top: 12px;
+    padding: 10px;
+
+    
+    
+}
+
+#info-box-full img{
+    width: 100%;
+}
+#info-box-full h3{
+    text-align: center;
+    
+}
